@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Policy Insure Now | Insurance Made Simple</title>
+
+  <meta
+    name="description"
+    content="Policy Insure Now helps you explore life, health, motor and general insurance solutions with simple, personalised guidance."
+  >
+
+  <meta
+    name="keywords"
+    content="Policy Insure Now, life insurance, health insurance, motor insurance, car insurance, bike insurance, general insurance, insurance advisor"
+  >
+
+  <meta name="theme-color" content="#0b1f3a">
+
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <style>
+
+    /* =========================
+       GLOBAL
+    ========================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: #172033;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Manrope", sans-serif;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================== */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s ease;
+      border: none;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background: #ff7a45;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #e96332;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid #ffffff;
+      color: white;
+      margin-left: 10px;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #0b1f3a;
+    }
+
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    header {
+      background: #0b1f3a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      font-family: "Manrope", sans-serif;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: #ff7a45;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      color: #dce4ef;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .nav-call {
+      background: #ff7a45;
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 7px;
+      font-weight: 700;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      background: #0b1f3a;
+      color: white;
+      padding: 80px 0 100px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 55px;
+      margin-bottom: 22px;
+      letter-spacing: -1.5px;
+    }
+
+    .hero-content h1 span {
+      color: #ff7a45;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      color: #c5d0df;
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .trust-points {
+      display: flex;
+      gap: 25px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .trust-point {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 14px;
+      color: #dce4ef;
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #ff7a45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       LEAD FORM
+    ========================== */
+
+    .lead-card {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+      color: #172033;
+    }
+
+    .lead-card h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .lead-card p {
+      color: #687386;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #dce1e8;
+      border-radius: 7px;
+      outline: none;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: #ff7a45;
+    }
+
+    .form-submit {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: #8b94a3;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+
+    /* =========================
+       SECTION TITLE
+    ========================== */
+
+    .section-title {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #0b1f3a;
+    }
+
+    .section-title p {
+      color: #687386;
+      font-size: 17px;
+    }
+
+
+    /* =========================
+       INSURANCE
+    ========================== */
+
+    .products {
+      background: #f7f9fc;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      border: 1px solid #edf0f4;
+      transition: 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(11, 31, 58, 0.08);
+    }
+
+    .product-icon {
+      width: 55px;
+      height: 55px;
+      background: #fff0e9;
+      color: #ff7a45;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .product-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .product-card p {
+      color: #687386;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       WHY POLICY INSURE NOW
+    ========================== */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .why-image {
+      background: #0b1f3a;
+      min-height: 450px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .why-image h3 {
+      font-size: 34px;
+    }
+
+    .why-content h2 {
+      font-size: 42px;
+      color: #0b1f3a;
+      margin-bottom: 20px;
+    }
+
+    .why-content > p {
+      color: #687386;
+      margin-bottom: 30px;
+    }
+
+    .why-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 15px;
+    }
+
+    .why-number {
+      min-width: 40px;
+      height: 40px;
+      background: #fff0e9;
+      color: #ff7a45;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    .why-item h4 {
+      margin-bottom: 4px;
+    }
+
+    .why-item p {
+      color: #687386;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       HOW IT WORKS
+    ========================== */
+
+    .process {
+      background: #f7f9fc;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .process-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .process-number {
+      width: 50px;
+      height: 50px;
+      background: #0b1f3a;
+      color: white;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    .process-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      color: #687386;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      background: #0b1f3a;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 44px;
+      max-width: 750px;
+      margin: auto auto 18px;
+    }
+
+    .cta p {
+      color: #c5d0df;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+
+    /* =========================
+       FAQ
+    ========================== */
+
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e4e7ec;
+    }
+
+    .faq-question {
+      padding: 22px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+    }
+
+    .faq-answer {
+      display: none;
+      color: #687386;
+      font-size: 15px;
+      padding-bottom: 22px;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-icon {
+      font-size: 22px;
+      color: #ff7a45;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #07172b;
+      color: white;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #9eacbd;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #203149;
+      padding-top: 20px;
+      text-align: center;
+      color: #77869a;
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       WHATSAPP
+    ========================== */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 85px;
+      width: 55px;
+      height: 55px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      z-index: 999;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+
+    /* =========================
+       MOBILE CALL
+    ========================== */
+
+    .mobile-call {
+      display: none;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content h1 {
+        font-size: 43px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .section-title h2,
+      .why-content h2 {
+        font-size: 32px;
+      }
+
+      .hero {
+        padding: 60px 0 70px;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+
+      .lead-card {
+        padding: 25px 20px;
+      }
+
+      .product-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .btn-outline {
+        margin-left: 0;
+      }
+
+      .mobile-call {
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: #ff7a45;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        z-index: 998;
+      }
+
+      .whatsapp {
+        bottom: 75px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="#" class="logo">
+      Policy<span> Insure Now</span>
+    </a>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="#insurance">
+          Insurance
+        </a>
+      </li>
+
+      <li>
+        <a href="#why-us">
+          Why Us
+        </a>
+      </li>
+
+      <li>
+        <a href="#how-it-works">
+          How It Works
+        </a>
+      </li>
+
+      <li>
+        <a href="#faq">
+          FAQ
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="tel:+8874982171"
+          class="nav-call"
+        >
+          Call Now
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+
+    <div class="hero-content">
+
+      <h1>
+
+        Insurance Made Simple.
+        <span>Protection Made Personal.</span>
+
+      </h1>
+
+
+      <p>
+
+        Explore insurance solutions designed
+        around your needs, your family and
+        your financial future. Get simple,
+        personalised guidance from Policy Insure Now.
+
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="#lead-form"
+          class="btn btn-primary"
+        >
+          Get a Free Consultation
+        </a>
+
+
+        <a
+          href="tel:+918874982171"
+          class="btn btn-outline"
+        >
+          📞 Call an Expert
+        </a>
+
+      </div>
+
+
+      <div class="trust-points">
+
+        <div class="trust-point">
+
+          <span class="check">
+            ✓
+          </span>
+
+          Personalised Guidance
+
+        </div>
+
+
+        <div class="trust-point">
+
+          <span class="check">
+            ✓
+          </span>
+
+          Simple Process
+
+        </div>
+
+
+        <div class="trust-point">
+
+          <span class="check">
+            ✓
+          </span>
+
+          Expert Assistance
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         LEAD FORM
+    ========================== -->
+
+    <div
+      class="lead-card"
+      id="lead-form"
+    >
+
+      <h3>
+        Get a Free Insurance Consultation
+      </h3>
+
+
+      <p>
+
+        Share your requirements and
+        our team will get in touch with you.
+
+      </p>
+
+
+      <form
+        onsubmit="submitLead(event)"
+      >
+
+
+        <div class="form-group">
+
+          <label>
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          >
+
+        </div>
+
+
+
+        <div class="form-group">
+
+          <label>
+            Mobile Number
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter 10-digit mobile number"
+            pattern="[0-9]{10}"
+            required
+          >
+
+        </div>
+
+
+
+        <div class="form-group">
+
+          <label>
+            What are you looking for?
+          </label>
+
+          <select
+            id="insurance"
+            required
+          >
+
+            <option value="">
+              Select Insurance Type
+            </option>
+
+            <option value="Life Insurance">
+              Life Insurance
+            </option>
+
+            <option value="Health Insurance">
+              Health Insurance
+            </option>
+
+            <option value="Car Insurance">
+              Car Insurance
+            </option>
+
+            <option value="Bike Insurance">
+              Bike Insurance
+            </option>
+
+            <option value="General Insurance">
+              General Insurance
+            </option>
+
+            <option value="Other">
+              Other
+            </option>
+
+          </select>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+          <label>
+            City
+          </label>
+
+          <input
+            type="text"
+            id="city"
+            placeholder="Enter your city"
+            required
+          >
+
+        </div>
+
+
+
+        <button
+          type="submit"
+          class="btn btn-primary form-submit"
+        >
+
+          Get Free Consultation
+
+        </button>
+
+
+        <div class="form-note">
+
+          By submitting this form, you agree
+          to be contacted regarding your
+          insurance requirements.
+
+        </div>
+
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     INSURANCE PRODUCTS
+========================== -->
+
+<section
+  class="section products"
+  id="insurance"
+>
+
+  <div class="container">
+
+
+    <div class="section-title">
+
+      <h2>
+        Insurance Solutions For Your Needs
+      </h2>
+
+      <p>
+
+        Whether you're protecting your family,
+        health, vehicle or financial future,
+        Policy Insure Now helps you explore
+        suitable insurance options.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="product-grid">
+
+
+      <div class="product-card">
+
+        <div class="product-icon">
+          ❤️
+        </div>
+
+        <h3>
+          Life Insurance
+        </h3>
+
+        <p>
+
+          Help protect your family's
+          financial future and plan
+          for long-term financial security.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="product-card">
+
+        <div class="product-icon">
+          🏥
+        </div>
+
+        <h3>
+          Health Insurance
+        </h3>
+
+        <p>
+
+          Explore health insurance
+          options designed to provide
+          financial support against
+          unexpected medical expenses.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="product-card">
+
+        <div class="product-icon">
+          🚗
+        </div>
+
+        <h3>
+          Motor Insurance
+        </h3>
+
+        <p>
+
+          Protect your car or bike with
+          suitable motor insurance
+          coverage based on your needs.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="product-card">
+
+        <div class="product-icon">
+          🛡️
+        </div>
+
+        <h3>
+          General Insurance
+        </h3>
+
+        <p>
+
+          Explore insurance solutions
+          for your everyday protection
+          and financial needs.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHY US
+========================== -->
+
+<section
+  class="section"
+  id="why-us"
+>
+
+  <div class="container why-grid">
+
+
+    <div class="why-image">
+
+      <div>
+
+        <h3>
+
+          Protect What Matters.
+          <br>
+          Plan For What Matters Next.
+
+        </h3>
+
+
+        <p
+          style="margin-top:20px;color:#c5d0df;"
+        >
+
+          Simple guidance to help you
+          make informed insurance decisions.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="why-content">
+
+      <h2>
+        Why Choose Policy Insure Now?
+      </h2>
+
+
+      <p>
+
+        Insurance can sometimes feel complicated.
+        Our goal is to make the process easier
+        by helping you understand your options
+        and make informed decisions.
+
+      </p>
+
+
+
+      <div class="why-list">
+
+
+        <div class="why-item">
+
+          <div class="why-number">
+            01
+          </div>
+
+
+          <div>
+
+            <h4>
+              Understand Your Needs
+            </h4>
+
+            <p>
+
+              We start by understanding
+              your requirements, priorities
+              and financial goals.
+
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="why-item">
+
+          <div class="why-number">
+            02
+          </div>
+
+
+          <div>
+
+            <h4>
+              Explore Suitable Options
+            </h4>
+
+            <p>
+
+              Get guidance on insurance
+              options that may be relevant
+              to your specific requirements.
+
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="why-item">
+
+          <div class="why-number">
+            03
+          </div>
+
+
+          <div>
+
+            <h4>
+              Make An Informed Decision
+            </h4>
+
+            <p>
+
+              Understand key features,
+              coverage and considerations
+              before making your decision.
+
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     HOW IT WORKS
+========================== -->
+
+<section
+  class="section process"
+  id="how-it-works"
+>
+
+  <div class="container">
+
+
+    <div class="section-title">
+
+      <h2>
+        Getting Started Is Simple
+      </h2>
+
+      <p>
+
+        A simple process designed to
+        make your insurance journey easier.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="process-grid">
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          1
+        </div>
+
+        <h3>
+          Share Your Requirements
+        </h3>
+
+        <p>
+
+          Fill out the form or call us
+          to tell us what kind of
+          insurance you're looking for.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          2
+        </div>
+
+        <h3>
+          Talk To Our Team
+        </h3>
+
+        <p>
+
+          Connect with our team to
+          understand your requirements
+          and available options.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          3
+        </div>
+
+        <h3>
+          Explore Your Options
+        </h3>
+
+        <p>
+
+          Review relevant insurance
+          options and understand
+          the available coverage.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          4
+        </div>
+
+        <h3>
+          Choose With Confidence
+        </h3>
+
+        <p>
+
+          Make an informed decision
+          based on your needs and
+          financial priorities.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================== -->
+
+<section class="section cta">
+
+  <div class="container">
+
+    <h2>
+
+      Not Sure Which Insurance
+      Is Right For You?
+
+    </h2>
+
+
+    <p>
+
+      Talk to Policy Insure Now and
+      get guidance based on your
+      individual requirements.
+
+    </p>
+
+
+    <a
+      href="#lead-form"
+      class="btn btn-primary"
+    >
+
+      Get Free Consultation
+
+    </a>
+
+
+    <a
+      href="tel:+919974982171"
+      class="btn btn-outline"
+    >
+
+      Call Now
+
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     FAQ
+========================== -->
+
+<section
+  class="section"
+  id="faq"
+>
+
+  <div class="container">
+
+
+    <div class="section-title">
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+      <p>
+
+        Here are answers to some
+        common insurance questions.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="faq-container">
+
+
+      <div class="faq-item">
+
+
+        <div
+          class="faq-question"
+          onclick="toggleFAQ(this)"
+        >
+
+          <span>
+            How do I choose the right insurance?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </div>
+
+
+        <div class="faq-answer">
+
+          The right insurance depends on
+          your individual requirements,
+          financial situation, family needs
+          and desired coverage. Our team
+          can help you understand the
+          factors you should consider.
+
+        </div>
+
+      </div>
+
+
+
+      <div class="faq-item">
+
+
+        <div
+          class="faq-question"
+          onclick="toggleFAQ(this)"
+        >
+
+          <span>
+            Can I get help understanding insurance options?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </div>
+
+
+        <div class="faq-answer">
+
+          Yes. Policy Insure Now helps
+          simplify the insurance journey
+          by providing guidance and helping
+          you understand relevant insurance
+          options and coverage.
+
+        </div>
+
+      </div>
+
+
+
+      <div class="faq-item">
+
+
+        <div
+          class="faq-question"
+          onclick="toggleFAQ(this)"
+        >
+
+          <span>
+            What types of insurance can I explore?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </div>
+
+
+        <div class="faq-answer">
+
+          You can explore life insurance,
+          health insurance, motor insurance
+          and other general insurance
+          requirements.
+
+        </div>
+
+      </div>
+
+
+
+      <div class="faq-item">
+
+
+        <div
+          class="faq-question"
+          onclick="toggleFAQ(this)"
+        >
+
+          <span>
+            How can I contact Policy Insure Now?
+          </span>
+
+          <span class="faq-icon">
+            +
+          </span>
+
+        </div>
+
+
+        <div class="faq-answer">
+
+          You can submit the consultation
+          form on this page or call us
+          directly. Our team will get
+          in touch with you.
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+  <div class="container">
+
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>
+          Policy Insure Now
+        </h3>
+
+
+        <p>
+
+          Insurance Made Simple.
+          Protection Made Personal.
+
+        </p>
+
+
+        <p style="margin-top:15px;">
+
+          We help you understand insurance
+          options and make informed decisions
+          based on your requirements.
+
+        </p>
+
+      </div>
+
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+
+        <ul>
+
+          <li>
+            <a href="#insurance">
+              Insurance
+            </a>
+          </li>
+
+          <li>
+            <a href="#why-us">
+              Why Us
+            </a>
+          </li>
+
+          <li>
+            <a href="#how-it-works">
+              How It Works
+            </a>
+          </li>
+
+          <li>
+            <a href="#faq">
+              FAQ
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div>
+
+        <h3>
+          Contact Us
+        </h3>
+
+
+        <p>
+
+          📞
+
+          <a href="tel:+918874982171">
+
+            +91 8874982171
+
+          </a>
+
+        </p>
+
+
+        <p style="margin-top:8px;">
+
+          ✉️
+
+          <a href="mailto:policyinsurenow@gmail.com">
+
+            policyinsurenow@gmail.com
+
+          </a>
+
+        </p>
+
+
+        <p style="margin-top:8px;">
+
+          🌐 policyinsurenow.com
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      © 2026 Policy Insure Now.
+      All Rights Reserved.
+
+      <br><br>
+
+      <span>
+
+        Disclaimer: Insurance is a subject matter
+        of solicitation. Please read all policy
+        related documents carefully before making
+        a purchase decision. This website is for
+        informational and lead-generation purposes only.
+
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =========================
+     WHATSAPP BUTTON
+========================== -->
+
+<a
+  href="https://wa.me/918874982171?text=Hi%20Policy%20Insure%20Now%2C%20I%20am%20interested%20in%20insurance."
+  class="whatsapp"
+  target="_blank"
+  aria-label="Chat with Policy Insure Now on WhatsApp"
+>
+
+  💬
+
+</a>
+
+
+
+<!-- =========================
+     MOBILE CALL BUTTON
+========================== -->
+
+<a
+  href="tel:+918874982171"
+  class="mobile-call"
+>
+
+  📞 Call Policy Insure Now
+
+</a>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+
+  /* =========================
+     FAQ
+  ========================== */
+
+  function toggleFAQ(element) {
+
+    const item =
+      element.parentElement;
+
+    item.classList.toggle("active");
+
+
+    const icon =
+      element.querySelector(".faq-icon");
+
+
+    if (
+      item.classList.contains("active")
+    ) {
+
+      icon.textContent = "−";
+
+    } else {
+
+      icon.textContent = "+";
+
+    }
+
+  }
+
+
+
+  /* =========================
+     LEAD FORM
+  ========================== */
+
+  function submitLead(event) {
+
+    event.preventDefault();
+
+
+    const name =
+      document.getElementById("name").value;
+
+
+    const phone =
+      document.getElementById("phone").value;
+
+
+    const insurance =
+      document.getElementById("insurance").value;
+
+
+    const city =
+      document.getElementById("city").value;
+
+
+
+    /*
+      YOUR WHATSAPP NUMBER
+
+      Replace 918874982171
+      with your actual WhatsApp number.
+
+    */
+
+
+    const whatsappNumber =
+      "918874982171";
+
+
+    const message =
+
+      `Hi Policy Insure Now,
+
+My name is ${name}.
+
+I am interested in ${insurance}.
+
+My mobile number is ${phone}.
+
+My city is ${city}.
+
+I would like to know more about the available insurance options.`;
+
+
+    const whatsappURL =
+
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+
+    /*
+      OPEN WHATSAPP
+    */
+
+    window.open(
+      whatsappURL,
+      "_blank"
+    );
+
+
+    /*
+      GOOGLE ADS CONVERSION TRACKING
+
+      Add your Google Ads conversion
+      tracking code here later.
+
+    */
+
+  }
+
+
+</script>
+
+
+</body>
+
+</html>
