@@ -907,6 +907,7 @@
 
 
       <form
+        id="insuranceLeadForm"
         action="https://formspree.io/f/xjgneyry" 
         method="POST"
       >
@@ -1033,6 +1034,23 @@
 
 
       </form>
+
+      <div id="formSuccess" style="display:none; text-align:center; padding:30px 15px;">
+  
+  <div style="font-size:45px; margin-bottom:10px;">
+    ✓
+  </div>
+
+  <h3 style="color:#0b1f3a; margin-bottom:10px;">
+    Thank You!
+  </h3>
+
+  <p style="color:#687386; line-height:1.6;">
+    Your request has been submitted successfully.<br>
+    Our insurance team will contact you shortly.
+  </p>
+
+</div>
 
     </div>
 
@@ -1969,7 +1987,48 @@ I would like to know more about the available insurance options.`;
 
   }
 
+const insuranceLeadForm = document.getElementById("insuranceLeadForm");
 
+if (insuranceLeadForm) {
+  insuranceLeadForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const submitButton = insuranceLeadForm.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.textContent;
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
+
+    try {
+      const formData = new FormData(insuranceLeadForm);
+
+      const response = await fetch(insuranceLeadForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        insuranceLeadForm.style.display = "none";
+        document.getElementById("formSuccess").style.display = "block";
+        insuranceLeadForm.reset();
+      } else {
+        alert("Something went wrong. Please try again.");
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+      }
+
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+    }
+  });
+}
+
+  
 </script>
 
 
