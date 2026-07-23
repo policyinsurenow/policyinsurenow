@@ -17,7 +17,25 @@
     'phone_conversion_number': '+91 88749 82171'
   });
 </script>
-  
+<!-- Event snippet for Click to call conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18299220627/uc1ICIzsv9UcEJPl35VE',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+<meta charset="UTF-8"> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
